@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIOLETA | Asistencia virtual</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    
+    <!-- ENCABEZADO -->
+     
+    <header class="menu-principal">
+        
+        <div class="logo">
+            
+            <img
+            
+            src="img/logo.png"
+            alt="Logo de VIOLETA">
+            
+            <span>
+                
+                VIOLETA
+            
+            </span>
+        
+        </div>
+        
+        <nav class="menu-lateral">
+            
+            <a href="index.html">
+                
+                🏠 Inicio
+            
+            </a>
+            
+            <a href="index.html#violeta">
+                
+                💜 ¿Qué es VIOLETA?
+            
+            </a>
+            
+            <a href="recursos.html">
+                
+                📚 Recursos
+            
+            </a>
+            
+            <a
+            
+                href="chatbot.html"
+                class="nav-ayuda">
+            
+                💬 Necesito ayuda
+            
+            </a>
+        
+        </nav>
+    
+    </header>
+
+
+    <!-- CHAT -->
+
+    <main class="pagina-chatbot">
+
+        <div class="chatbot-container">
+
+
+            <!-- ENCABEZADO DEL CHAT -->
+
+            <div class="chat-header">
+
+                <div>
+
+                    <h2>💜 VIOLETA</h2>
+
+                    <p>
+                        Orientación inicial y acceso a recursos
+                    </p>
+
+                </div>
+
+                <span class="estado">
+                    ● Disponible
+                </span>
+
+            </div>
+
+
+            <!-- MENSAJES -->
+
+            <div
+                class="chat-mensajes"
+                id="chatMensajes">
+
+                <div class="mensaje violeta">
+                    Hola, soy VIOLETA 💜
+                </div>
+
+                <div class="mensaje violeta">
+                    Estoy acá para brindarte orientación inicial
+                    e información sobre recursos de ayuda.
+                </div>
+
+                <div class="mensaje violeta">
+                    No tenés que contarme nada que no quieras.
+                </div>
+
+                <div class="mensaje violeta">
+                    ¿Cómo puedo ayudarte?
+                </div>
+
+            </div>
+
+
+            <!-- OPCIONES -->
+
+            <div
+                class="opciones-chat"
+                id="opcionesChat">
+
+                <button onclick="mostrarEmergencia()">
+
+                    🚨 Estoy en una emergencia
+
+                </button>
+
+
+                <button onclick="mostrarLegal()">
+
+                    ⚖️ Necesito orientación
+                    sobre una denuncia
+
+                </button>
+
+
+                <button onclick="mostrarContencion()">
+
+                    💜 Necesito orientación
+                    o acompañamiento
+
+                </button>
+
+
+                <button onclick="mostrarInformacion()">
+
+                    ℹ️ Necesito información
+
+                </button>
+
+
+                <button onclick="mostrarAyudaOtraPersona()">
+
+                    👥 Quiero ayudar a otra persona
+
+                </button>
+
+            </div>
+
+
+            <!-- ACLARACIÓN -->
+
+            <div class="chat-aclaracion">
+
+                VIOLETA brinda orientación inicial y
+                facilita el acceso a información y recursos.
+
+                <br><br>
+
+                No reemplaza la atención profesional
+                ni los servicios de emergencia.
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        <h3>💜 VIOLETA</h3>
+
+        <p>
+            Orientación, información y acceso a recursos.
+        </p>
+
+        <p class="footer-aclaracion">
+            Prototipo académico desarrollado
+            con fines educativos.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/chatbot.js"></script>
+    <script src="js/sesion.js"></script>
+
+</body>
+
+</html>

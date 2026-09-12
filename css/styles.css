@@ -1,0 +1,2409 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("../img/fondodepantalla.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADObackground-color: white;
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 8%;
+
+    background-image: url("../img/fondodepantalla.jpg");
+
+    border-bottom: 1px solid #eeeeee;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #7b2cbf;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #555555;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7b2cbf;
+}
+
+
+/* BOTÓN DEL MENÚ */
+
+.nav-ayuda {
+    background-color: #7b2cbf;
+
+    color: white !important;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+}
+
+.nav-ayuda:hover {
+    background-color: #5a189a;
+}
+
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+
+.inicio {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #f7edff,
+        #ffffff
+    );
+}
+
+.contenido-inicio {
+    max-width: 800px;
+}
+
+.mensaje-superior {
+    color: #7b2cbf;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+
+    color: #3c096c;
+
+    margin-bottom: 25px;
+
+    line-height: 1.2;
+}
+
+.descripcion {
+    font-size: 20px;
+
+    color: #555555;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   BOTONES PRINCIPALES
+========================= */
+
+.botones {
+    margin-top: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.boton-principal {
+    background-color: #7b2cbf;
+
+    color: white;
+
+    padding: 15px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #5a189a;
+
+    transform: translateY(-2px);
+}
+
+.boton-secundario {
+    border: 2px solid #7b2cbf;
+
+    color: #7b2cbf;
+
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton-secundario:hover {
+    background-color: #f1d9ff;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 70px 8%;
+
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    max-width: 300px;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.icono {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.beneficio h3 {
+    margin-bottom: 10px;
+
+    color: #3c096c;
+}
+
+
+/* =========================
+   ¿QUÉ ES VIOLETA?
+========================= */
+
+.violeta-info {
+    background-color: #faf5ff;
+    
+    padding: 80px 15%;
+
+    text-align: center;
+}
+
+.violeta-info h2 {
+    font-size: 32px;
+
+    color: #3c096c;
+
+    margin-bottom: 25px;
+}
+
+.violeta-info p {
+    max-width: 800px;
+
+    margin: 15px auto;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   RECURSOS
+========================= */
+
+.recursos {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.recursos h2 {
+    font-size: 32px;
+
+    color: #3c096c;
+}
+
+.texto-recursos {
+    margin: 15px 0 40px;
+}
+
+.tarjetas-recursos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    background-color: white;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+}
+
+.icono-recurso {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #3c096c;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+.tarjeta strong {
+    color: #7b2cbf;
+}
+
+
+/* =========================
+   EMERGENCIA
+========================= */
+
+.emergencia {
+    background-color: #fdfcfe;
+
+    color: #3c096c;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.emergencia h2 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.numeros-emergencia {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin: 35px 0;
+
+    flex-wrap: wrap;
+}
+
+.numeros-emergencia div {
+    background-color: #3c096c;
+
+    color: #f6f5f8;
+
+    padding: 20px 40px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 180px;
+}
+
+.numeros-emergencia strong {
+    font-size: 35px;
+}
+
+.aclaracion {
+    font-size: 14px;
+
+    opacity: 0.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #240046;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px 20px;
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-aclaracion {
+    font-size: 11px;
+
+    opacity: 0.7;
+
+    margin-top: 10px;
+}
+
+/* =========================
+   CHATBOT
+========================= */
+
+.pagina-chatbot {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #f7edff,
+        #ffffff
+    );
+}
+
+.chatbot-container {
+    width: 100%;
+
+    max-width: 700px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
+}
+
+
+/* ENCABEZADO DEL CHAT */
+
+.chat-header {
+    background-color: #7b2cbf;
+
+    color: white;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.chat-header h2 {
+    margin-bottom: 5px;
+}
+
+.chat-header p {
+    font-size: 14px;
+}
+
+.estado {
+    font-size: 13px;
+}
+
+
+/* MENSAJES */
+
+.chat-mensajes {
+    height: 350px;
+
+    overflow-y: auto;
+
+    padding: 25px;
+
+    background-color: #fafafa;
+}
+
+.mensaje {
+    padding: 12px 16px;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    max-width: 80%;
+}
+
+.mensaje.violeta {
+    background-color: #f1d9ff;
+
+    color: #3c096c;
+}
+
+
+/* MENSAJE DEL USUARIO */
+
+.mensaje.usuario {
+    background-color: #7b2cbf;
+
+    color: white;
+
+    margin-left: auto;
+}
+
+
+/* OPCIONES */
+
+.opciones-chat {
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.opciones-chat button {
+    padding: 15px;
+
+    border: 2px solid #7b2cbf;
+
+    background-color: white;
+
+    color: #3c096c;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.opciones-chat button:hover {
+    background-color: #f7edff;
+
+    transform: translateX(3px);
+}
+
+
+/* ACLARACIÓN */
+
+.chat-aclaracion {
+    background-color: #f5f5f5;
+
+    padding: 15px 25px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #666666;
+}
+
+
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 20px;
+    }
+
+    nav {
+        gap: 10px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .descripcion {
+        font-size: 17px;
+    }
+
+    .violeta-info {
+        padding: 60px 25px;
+    }
+
+    .inicio {
+        padding: 60px 20px;
+    }
+
+    .chat-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .chat-mensajes {
+        height: 400px;
+    }
+}
+
+/* =========================
+   PÁGINA DE RECURSOS
+========================= */
+
+.pagina-recursos {
+
+    padding: 80px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #f7edff,
+        #ffffff
+    );
+
+}
+
+
+.titulo-pagina {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+}
+
+
+.titulo-pagina h1 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.titulo-pagina p {
+
+    font-size: 18px;
+
+    color: #555555;
+
+}
+
+
+/* =========================
+   RECURSO DESTACADO
+========================= */
+
+.recurso-destacado {
+
+    max-width: 900px;
+
+    margin: 0 auto 50px;
+
+    padding: 35px;
+
+    background-color: #3c096c;
+
+    color: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.icono-recurso-grande {
+
+    font-size: 65px;
+
+}
+
+
+.recurso-destacado h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.recurso-destacado p {
+
+    margin-bottom: 10px;
+
+}
+
+
+.numero-grande {
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   LISTA DE RECURSOS
+========================= */
+
+.lista-recursos {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.recurso-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.recurso-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.recurso-card h2 {
+
+    color: #3c096c;
+
+    margin-bottom: 15px;
+
+}
+
+
+.recurso-card p {
+
+    color: #555555;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   BOTONES DE RECURSOS
+========================= */
+
+.boton-recurso {
+
+    display: inline-block;
+
+    background-color: #7b2cbf;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.boton-recurso:hover {
+
+    background-color: #5a189a;
+
+}
+
+
+/* =========================
+   AVISO
+========================= */
+
+.aviso-recursos {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #faf5ff;
+
+}
+
+
+.aviso-recursos h2 {
+
+    color: #3c096c;
+
+    margin-bottom: 15px;
+
+}
+
+
+.aviso-recursos p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #555555;
+
+}
+
+
+/* =========================
+   RECURSOS EN CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .lista-recursos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .recurso-destacado {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+
+    min-height: calc(100vh - 80px);
+
+    padding: 70px 8%;
+
+    background-color: #faf5ff;
+
+}
+
+
+.dashboard-titulo {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.dashboard-titulo h1 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.dashboard-titulo p {
+
+    color: #555555;
+
+}
+
+
+/* =========================
+   TARJETAS DE DATOS
+========================= */
+
+.estadisticas-resumen {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+.dato-card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.dato-icono {
+
+    font-size: 35px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+
+.dato-card h3 {
+
+    color: #3c096c;
+
+    margin-bottom: 10px;
+
+}
+
+
+.dato-card strong {
+
+    display: block;
+
+    font-size: 40px;
+
+    color: #7b2cbf;
+
+}
+
+
+.dato-card p {
+
+    color: #777777;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   ACCESOS RÁPIDOS
+========================= */
+
+.dashboard-accesos {
+
+    max-width: 1100px;
+
+    margin: 70px auto 30px;
+
+}
+
+
+.dashboard-accesos h2 {
+
+    color: #3c096c;
+
+    margin-bottom: 25px;
+
+}
+
+
+.accesos-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.acceso-card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-decoration: none;
+
+    color: #333333;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.acceso-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.acceso-card h3 {
+
+    color: #3c096c;
+
+    margin: 10px 0;
+
+}
+
+
+.acceso-card p {
+
+    color: #666666;
+
+}
+
+
+/* =========================
+   AVISO
+========================= */
+
+.dashboard-aviso {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    font-size: 13px;
+
+    color: #777777;
+
+}
+
+
+/* =========================
+   DASHBOARD EN CELULAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .estadisticas-resumen {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .accesos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .estadisticas-resumen {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* =========================
+   ESTADÍSTICAS
+========================= */
+
+.estadisticas {
+
+    min-height: calc(100vh - 80px);
+
+    padding: 70px 8%;
+
+    background-color: #faf5ff;
+
+}
+
+
+.estadisticas-titulo {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.estadisticas-titulo h1 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.estadisticas-titulo p {
+
+    color: #555555;
+
+}
+
+
+/* =========================
+   RESUMEN DE ESTADÍSTICAS
+========================= */
+
+.resumen-estadisticas {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.resumen-estadisticas div {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+
+}
+
+
+.resumen-estadisticas strong {
+
+    display: block;
+
+    font-size: 35px;
+
+    color: #7b2cbf;
+
+}
+
+
+.resumen-estadisticas span {
+
+    color: #555555;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.grafico-container {
+
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.grafico-container h2 {
+
+    color: #3c096c;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   BARRAS
+========================= */
+
+.barra {
+
+    display: grid;
+
+    grid-template-columns: 150px 1fr 50px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.barra-fondo {
+
+    height: 20px;
+
+    background-color: #eeeeee;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.barra-valor {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background-color: #7b2cbf;
+
+}
+
+
+.estadisticas-aviso {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #777777;
+
+}
+
+
+/* =========================
+   ESTADÍSTICAS EN CELULAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .resumen-estadisticas {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .resumen-estadisticas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .barra {
+
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+
+    }
+
+}
+
+/* neuvooooooooooooooooooooooooooo para el daaaaaaaaaaaaaaaaaaaaasssssssssssssssssssh */
+/* =====================================================
+   DASHBOARD - MÉTRICAS E INDICADORES
+===================================================== */
+
+.estadisticas-resumen {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.dato-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+
+.dato-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.dato-icono {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+
+.dato-card h3 {
+    color: #3c096c;
+    margin-bottom: 12px;
+}
+
+
+.dato-card strong {
+    display: block;
+    font-size: 42px;
+    color: #7b2cbf;
+    margin-bottom: 8px;
+}
+
+
+.dato-card p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   INDICADORES
+===================================================== */
+
+.indicadores-dashboard {
+    max-width: 1100px;
+    margin: 70px auto 0;
+}
+
+
+.indicadores-dashboard h2 {
+    color: #3c096c;
+    margin-bottom: 25px;
+}
+
+
+.indicadores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.indicador {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+
+.indicador > span {
+    font-size: 35px;
+}
+
+
+.indicador strong {
+    color: #3c096c;
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+.indicador p {
+    color: #666666;
+    margin: 0;
+}
+
+
+/* =====================================================
+   ACCESOS RÁPIDOS
+===================================================== */
+
+.dashboard-accesos {
+    max-width: 1100px;
+    margin: 70px auto 30px;
+}
+
+
+.dashboard-accesos h2 {
+    color: #3c096c;
+    margin-bottom: 25px;
+}
+
+
+.accesos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.acceso-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333333;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+
+.acceso-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.acceso-card h3 {
+    color: #3c096c;
+    margin: 10px 0;
+}
+
+
+.acceso-card p {
+    color: #666666;
+}
+
+
+/* =====================================================
+   AVISO
+===================================================== */
+
+.dashboard-aviso {
+    max-width: 900px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .estadisticas-resumen {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accesos-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .estadisticas-resumen {
+        grid-template-columns: 1fr;
+    }
+
+    .indicadores-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================================
+   VIOLETA - MENÚ LATERAL DEFINITIVO
+===================================================== */
+
+
+/* =====================================================
+   CUERPO GENERAL
+===================================================== */
+
+body {
+    margin: 0;
+
+    padding-left: 250px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MENÚ LATERAL
+===================================================== */
+
+header.menu-principal {
+
+    position: fixed !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 250px !important;
+    height: 100vh !important;
+
+    margin: 0 !important;
+
+    padding: 30px 20px !important;
+
+    box-sizing: border-box;
+
+    background-color: #3c096c !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    border: none !important;
+
+    z-index: 9999;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+header.menu-principal .logo {
+
+    width: 100% !important;
+
+    margin: 0 0 40px 0 !important;
+
+    padding: 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    gap: 10px;
+}
+
+
+header.menu-principal .logo img {
+
+    width: 70px !important;
+
+    height: 70px !important;
+
+    margin: 0 !important;
+
+    object-fit: contain;
+}
+
+
+header.menu-principal .logo span {
+
+    color: white !important;
+
+    font-size: 24px !important;
+
+    font-weight: bold !important;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   MENÚ
+===================================================== */
+
+header.menu-principal nav.menu-lateral {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    justify-content: flex-start !important;
+
+    gap: 8px !important;
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+header.menu-principal nav.menu-lateral a {
+
+    width: 100% !important;
+
+    min-height: 45px;
+
+    padding: 12px 15px !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    flex-direction: row !important;
+
+    background-color: transparent !important;
+
+    color: white !important;
+
+    text-decoration: none !important;
+
+    border-radius: 8px;
+
+    font-size: 15px !important;
+
+    font-weight: bold !important;
+
+    line-height: 1.3;
+
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   EFECTO AL PASAR EL MOUSE
+===================================================== */
+
+header.menu-principal nav.menu-lateral a:hover {
+
+    background-color: #7b2cbf !important;
+
+    color: white !important;
+
+    transform: translateX(3px);
+}
+
+
+/* =====================================================
+   NECESITO AYUDA
+===================================================== */
+
+header.menu-principal nav.menu-lateral a.nav-ayuda {
+
+    background-color: #7b2cbf !important;
+
+    color: white !important;
+
+    font-weight: bold !important;
+}
+
+
+header.menu-principal nav.menu-lateral a.nav-ayuda:hover {
+
+    background-color: #9d4edd !important;
+}
+
+
+/* =====================================================
+   CONTENIDO
+===================================================== */
+
+main {
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   EL MENÚ SIGUE A LA IZQUIERDA
+===================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding-left: 210px;
+    }
+
+
+    header.menu-principal {
+
+        width: 210px !important;
+
+        height: 100vh !important;
+
+        padding: 25px 15px !important;
+
+        position: fixed !important;
+
+        top: 0 !important;
+
+        left: 0 !important;
+
+        flex-direction: column !important;
+    }
+
+
+    header.menu-principal .logo {
+
+        margin-bottom: 30px !important;
+    }
+
+
+    header.menu-principal .logo img {
+
+        width: 55px !important;
+
+        height: 55px !important;
+    }
+
+
+    header.menu-principal .logo span {
+
+        font-size: 20px !important;
+    }
+
+
+    header.menu-principal nav.menu-lateral {
+
+        width: 100% !important;
+
+        flex-direction: column !important;
+
+        gap: 5px !important;
+    }
+
+
+    header.menu-principal nav.menu-lateral a {
+
+        width: 100% !important;
+
+        min-height: 40px;
+
+        padding: 10px 8px !important;
+
+        font-size: 13px !important;
+
+        justify-content: flex-start !important;
+
+        transform: none !important;
+    }
+
+
+    header.menu-principal nav.menu-lateral a:hover {
+
+        transform: none !important;
+    }
+
+}
+
+/* =====================================================
+   LOGIN Y SESIÓN
+===================================================== */
+
+
+/* =====================================================
+   ZONA DE USUARIO
+===================================================== */
+
+.zona-usuario {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 30px;
+
+    z-index: 9000;
+}
+
+
+/* =====================================================
+   BOTÓN INICIAR SESIÓN
+===================================================== */
+
+.boton-iniciar-sesion {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    background-color: white;
+
+    color: #3c096c;
+
+    border: 2px solid #7b2cbf;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+
+.boton-iniciar-sesion:hover {
+
+    background-color: #7b2cbf;
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   USUARIO CONECTADO
+===================================================== */
+
+.usuario-conectado {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: white;
+
+    padding: 8px 10px 8px 15px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+.usuario-conectado span {
+
+    color: #3c096c;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.usuario-conectado button {
+
+    border: none;
+
+    background-color: #7b2cbf;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.usuario-conectado button:hover {
+
+    background-color: #5a189a;
+
+}
+
+
+/* =====================================================
+   PÁGINA LOGIN
+===================================================== */
+
+.pagina-login {
+
+    min-height: 100vh;
+
+    padding: 0 !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7edff,
+            #ffffff
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =====================================================
+   CONTENEDOR
+===================================================== */
+
+.login-contenedor {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TARJETA LOGIN
+===================================================== */
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.12);
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   LOGO LOGIN
+===================================================== */
+
+.login-logo {
+
+    margin-bottom: 30px;
+}
+
+
+.login-logo img {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+
+.login-logo h1 {
+
+    font-size: 32px;
+
+    color: #3c096c;
+
+    margin-bottom: 5px;
+}
+
+
+.login-logo p {
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.login-titulo {
+
+    margin-bottom: 30px;
+}
+
+
+.login-titulo h2 {
+
+    color: #3c096c;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+
+.login-titulo p {
+
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.form-login {
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   CAMPOS
+===================================================== */
+
+.campo-login {
+
+    margin-bottom: 20px;
+}
+
+
+.campo-login label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #3c096c;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.campo-login input {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+
+.campo-login input:focus {
+
+    border-color: #7b2cbf;
+
+    box-shadow:
+        0 0 0 3px #f1d9ff;
+}
+
+
+/* =====================================================
+   MENSAJE LOGIN
+===================================================== */
+
+.mensaje-login {
+
+    min-height: 20px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    color: #b00020;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.mensaje-login.login-exito {
+
+    color: #3c096c;
+}
+
+
+/* =====================================================
+   BOTÓN LOGIN
+===================================================== */
+
+.boton-login {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #7b2cbf;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-login:hover {
+
+    background-color: #5a189a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   VOLVER
+===================================================== */
+
+.volver-inicio-login {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #7b2cbf;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.volver-inicio-login:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   AVISO LOGIN
+===================================================== */
+
+.login-aviso {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #888888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   LOGIN EN CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .zona-usuario {
+
+        top: 15px;
+
+        right: 15px;
+    }
+
+
+    .boton-iniciar-sesion {
+
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+
+
+    .usuario-conectado {
+
+        flex-direction: column;
+
+        align-items: flex-end;
+
+        gap: 5px;
+
+        padding: 8px;
+    }
+
+
+    .login-card {
+
+        padding: 30px 25px;
+    }
+
+
+    .login-logo img {
+
+        width: 60px;
+
+        height: 60px;
+    }
+
+}
+
+/* =====================================================
+   ENLACES ADMINISTRATIVOS
+===================================================== */
+
+.enlace-admin {
+    display: flex;
+}
+
+/* =====================================================
+   MENÚ ADMINISTRATIVO
+===================================================== */
+
+.menu-admin-generado {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 12px 15px;
+
+    box-sizing: border-box;
+
+    color: white !important;
+
+    background-color: transparent;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.menu-admin-generado:hover {
+
+    background-color: #7b2cbf;
+
+    color: white;
+
+    transform: translateX(3px);
+}

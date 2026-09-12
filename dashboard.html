@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIOLETA | Dashboard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+    
+    <header class="menu-principal">
+        
+        <div class="logo">
+            
+            <img
+            
+            src="img/logo.png"
+            alt="Logo de VIOLETA">
+            
+            <span>
+                
+                VIOLETA
+            
+            </span>
+
+        </div>
+        
+        <nav class="menu-lateral">
+            
+            <a href="index.html">
+                
+                🏠 Inicio
+            
+            </a>
+            
+            <a href="index.html#violeta">
+                
+                💜 ¿Qué es VIOLETA?
+            
+            </a>
+            
+            <a href="recursos.html">
+                
+                📚 Recursos
+            
+            </a>
+            
+            <a
+            
+                href="chatbot.html"
+                class="nav-ayuda">
+
+                💬 Necesito ayuda
+            
+            </a>
+            
+            <a
+                href="dashboard.html"
+                class="menu-admin-generado">
+
+                📊 Dashboard
+
+            </a>
+
+
+            <a
+                href="estadisticas.html"
+                class="menu-admin-generado">
+
+                📈 Estadísticas
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <main class="dashboard">
+
+
+        <!-- TÍTULO -->
+
+        <section class="dashboard-titulo">
+
+            <p class="mensaje-superior">
+                PANEL DE CONTROL
+            </p>
+
+            <h1>
+                Dashboard de VIOLETA
+            </h1>
+
+            <p>
+                Visualización general de las consultas
+                realizadas al prototipo.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             MÉTRICAS PRINCIPALES
+        ========================== -->
+
+        <section class="estadisticas-resumen">
+
+
+            <!-- CONSULTAS -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    💬
+                </span>
+
+                <h3>
+                    Consultas totales
+                </h3>
+
+                <strong id="totalConsultas">
+                    128
+                </strong>
+
+                <p>
+                    Consultas registradas
+                </p>
+
+            </div>
+
+
+            <!-- EMERGENCIAS -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    🚨
+                </span>
+
+                <h3>
+                    Emergencias
+                </h3>
+
+                <strong id="totalEmergencias">
+                    18
+                </strong>
+
+                <p>
+                    Consultas de emergencia
+                </p>
+
+            </div>
+
+
+            <!-- ORIENTACIÓN LEGAL -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    ⚖️
+                </span>
+
+                <h3>
+                    Orientación legal
+                </h3>
+
+                <strong id="totalLegales">
+                    35
+                </strong>
+
+                <p>
+                    Consultas legales
+                </p>
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    ℹ️
+                </span>
+
+                <h3>
+                    Información
+                </h3>
+
+                <strong id="totalInformacion">
+                    75
+                </strong>
+
+                <p>
+                    Consultas informativas
+                </p>
+
+            </div>
+
+
+            <!-- AYUDA A OTRA PERSONA -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    👥
+                </span>
+
+                <h3>
+                    Ayuda a otra persona
+                </h3>
+
+                <strong id="totalAyuda">
+                    24
+                </strong>
+
+                <p>
+                    Consultas registradas
+                </p>
+
+            </div>
+
+
+            <!-- RECURSOS -->
+
+            <div class="dato-card">
+
+                <span class="dato-icono">
+                    📚
+                </span>
+
+                <h3>
+                    Recursos consultados
+                </h3>
+
+                <strong id="totalRecursos">
+                    96
+                </strong>
+
+                <p>
+                    Accesos a recursos
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INDICADORES
+        ========================== -->
+
+        <section class="indicadores-dashboard">
+
+            <h2>
+                Indicadores del prototipo
+            </h2>
+
+
+            <div class="indicadores-grid">
+
+
+                <div class="indicador">
+
+                    <span>
+                        📌
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Categoría más consultada
+                        </strong>
+
+                        <p>
+                            Información
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="indicador">
+
+                    <span>
+                        🚨
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Consultas de emergencia
+                        </strong>
+
+                        <p>
+                            18 consultas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="indicador">
+
+                    <span>
+                        💜
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Orientación y acompañamiento
+                        </strong>
+
+                        <p>
+                            Disponible mediante VIOLETA
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="indicador">
+
+                    <span>
+                        📚
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Recursos disponibles
+                        </strong>
+
+                        <p>
+                            Acceso a información y asistencia
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACCESOS RÁPIDOS
+        ========================== -->
+
+        <section class="dashboard-accesos">
+
+            <h2>
+                Accesos rápidos
+            </h2>
+
+
+            <div class="accesos-grid">
+
+
+                <a
+                    href="estadisticas.html"
+                    class="acceso-card">
+
+                    📊
+
+                    <h3>
+                        Ver estadísticas
+                    </h3>
+
+                    <p>
+                        Analizar las consultas
+                        realizadas.
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="recursos.html"
+                    class="acceso-card">
+
+                    📚
+
+                    <h3>
+                        Consultar recursos
+                    </h3>
+
+                    <p>
+                        Consultar los recursos
+                        disponibles.
+                    </p>
+
+                </a>
+
+
+                <a
+                    href="chatbot.html"
+                    class="acceso-card">
+
+                    💜
+
+                    <h3>
+                        Probar chatbot
+                    </h3>
+
+                    <p>
+                        Acceder al asistente
+                        VIOLETA.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AVISO
+        ========================== -->
+
+        <div class="dashboard-aviso">
+
+            ⚠️ Los datos mostrados son simulados
+            y corresponden al prototipo académico.
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        <h3>
+
+            💜 VIOLETA
+
+        </h3>
+
+        <p>
+
+            Orientación, información y acceso a recursos.
+
+        </p>
+
+        <p class="footer-aclaracion">
+
+            Prototipo académico desarrollado con fines educativos.
+
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/sesion.js"></script>
+
+</body>
+
+</html>
